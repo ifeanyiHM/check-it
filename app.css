@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sofia Sans Semi Condensed", sans-serif;
+}
+
+body {
+  background: #f7fdfc;
+  padding: 1.875rem 1.5rem;
+}
+body header h1 {
+  color: #000b0a;
+  margin-top: 2.5rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
+body header p {
+  margin-top: 0.75rem;
+  color: #737373;
+  font-weight: 400;
+  line-height: 1.563rem;
+  font-family: "Nanum Gothic", sans-serif;
+}
+body header .desktop {
+  display: none;
+}
+body main {
+  margin: 2.5rem 1.5rem;
+}
+body main form {
+  padding: 1.5rem 1rem 1.875rem 1rem;
+  background: #fff;
+  box-shadow: 0px 4px 50px 0px rgba(4, 8, 19, 0.1019607843);
+}
+body main form label {
+  display: block;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #011c34;
+}
+body main form input,
+body main form select,
+body main form button {
+  width: 100%;
+  height: 3rem;
+  margin-top: 0.5rem;
+  border: 1px solid #f0f0f0;
+  padding: 0 0.875rem;
+}
+body main form input:focus,
+body main form select:focus,
+body main form button:focus {
+  outline: 3px solid #2ec4b6;
+}
+body main form input[id=fname] {
+  border: 3px solid #2ec4b6;
+}
+body main form :-moz-placeholder-shown {
+  color: #737373;
+}
+body main form input[type=date],
+body main form select,
+body main form :placeholder-shown {
+  color: #737373;
+}
+body main form .form-identity {
+  margin-bottom: 1.5rem;
+}
+body main form .identity {
+  margin-bottom: 0;
+}
+body main form button {
+  background: #2ec4b6;
+  color: #ffffff;
+  border: 0;
+  padding: 0;
+}
+body main form .fsub {
+  display: none;
+}
+body main .sub {
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 1.5rem;
+}
+body main .sub a {
+  color: #2ec4b6;
+}
+
+@media screen and (min-width: 900px) {
+  body {
+    display: flex;
+    align-items: center;
+    gap: 7.5rem;
+    padding: 5.063rem 8.75rem;
+  }
+  body header {
+    width: 28.75rem;
+  }
+  body header img {
+    width: 4.831rem;
+  }
+  body header .mobile {
+    display: none;
+  }
+  body header .desktop {
+    display: block;
+  }
+  body main {
+    width: 36.25rem;
+    margin: 0;
+  }
+  body main form .first-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
+  }
+  body main form .first-form .form-identity {
+    margin-bottom: 0;
+  }
+  body main form .fsub {
+    display: block;
+  }
+  body .lsub {
+    display: none;
+  }
+}/*# sourceMappingURL=app.css.map */
